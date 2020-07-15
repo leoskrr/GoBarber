@@ -26,7 +26,7 @@ O GoBarber é uma aplicação web e mobile para gerenciamento de barbearias. Ess
 🚀
 </p>
 
-<p align="left">
+<p align="center">
     <img alt="app gif" src="https://github.com/leoskrr/GoBarber/blob/master/.github/screenshots/sc-web-login.png" width="540px"/>
     <img alt="app gif" src="https://github.com/leoskrr/GoBarber/blob/master/.github/screenshots/sc-mobile-signup.png" width="185px" />
 </p>

@@ -9,13 +9,13 @@ import {
 } from 'typeorm';
 
 @Entity('user_token')
-class User {
+class UserToken {
     @PrimaryGeneratedColumn('uuid')
     id: string;
 
     @Column()
     @Generated('uuid')
-    name: string;
+    token: string;
 
     @Column()
     user_id: string;
@@ -27,4 +27,4 @@ class User {
     updated_at: Date;
 }
 
-export default User;
+export default UserToken;

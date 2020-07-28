@@ -17,6 +17,6 @@ export default class SessionsController {
             password,
         });
 
-        return response.sendStatus(204).json();
+        return response.status(204).json();
     }
 }

@@ -1,6 +1,6 @@
 /* eslint-disable camelcase */
 import { injectable, inject } from 'tsyringe';
-import { getDaysInMonth, getDate, getHours } from 'date-fns';
+import { getHours } from 'date-fns';
 
 import IAppointmentsRepository from '../repositories/IAppointmentsRepository';
 

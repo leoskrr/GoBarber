@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import { Request, Response } from 'express';
 import { parseISO } from 'date-fns';
 import { container } from 'tsyringe';
@@ -9,7 +10,7 @@ export default class AppointmentController {
         request: Request,
         response: Response,
     ): Promise<Response> {
-        // eslint-disable-next-line camelcase
+        const user_id = request.user.id;
         const { provider_id, date } = request.body;
 
         const parsedDate = parseISO(date);
@@ -19,6 +20,7 @@ export default class AppointmentController {
         const appointment = await createAppointment.execute({
             date: parsedDate,
             provider_id,
+            user_id,
         });
 
         return response.json(appointment);

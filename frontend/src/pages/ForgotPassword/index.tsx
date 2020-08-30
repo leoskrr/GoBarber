@@ -92,7 +92,9 @@ const ForgotPassword: React.FC = () => {
                 placeholder="E-mail"
               />
 
-              <Button type="submit">Recuperar</Button>
+              <Button loading={loading} type="submit">
+                Recuperar
+              </Button>
             </Form>
           </form>
           <Link to="/">

@@ -42,6 +42,7 @@
     ],
     "import/prefer-default-export": "off",
     "@typescript-eslint/camelcase": "off",
+    "import/no-duplicates": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
